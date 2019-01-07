@@ -19,7 +19,25 @@ img.space {
     position: absolute;
     top: 0%;
     left: 0%;
-    opacity: 0.8;
+
+}
+
+img.space1 {
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+}
+
+
+img.space2 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 20%
 }
 
 img.me {
@@ -83,6 +101,22 @@ img.linkedin:hover {
     opacity: 0.5;
 }
 
+img#onepic {
+    width: 100%;
+    height: auto;
+    padding-top: 32%;
+    opacity: 0.1;
+
+}
+
+img#twopic, img#threepic, img#fourpic, img#fivepic, img#sixpic, img#sevenpic, img#eightpic, img#ninepic, img#tenpic, img#elevenpic, img#twelvepic, img#thirteenpic, img#fourteenpic, img#fifteenpic, img#sixteenpic{
+    width: 100%;
+    height: auto;
+    opacity: 0.1;
+    padding-top: 2%;
+}
+
+
 h1 {
     position: relative;
     font-family: 'Meddon', cursive;
@@ -91,8 +125,92 @@ h1 {
     line-height: 90%;
     padding-top: 15%;
     color: #efe7e8;
-    ;
+}
 
+h1.about {
+    position: absolute;
+    left: 35%;
+    font-size: 200%;
+    top: 0%;
+
+}
+
+h2 {
+    font-family: 'Meddon', cursive;
+    color: black;
+    opacity: 0.7;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 100%;
+    font-size: 300%;
+    cursor: pointer;
+}
+
+h2:hover {
+    opacity: 1;
+}
+
+#h2 {
+     top: 35%;
+}
+
+#h3 {
+     top: 33%;
+}
+
+
+#h4 {
+     top: 38%;
+}
+
+#h5 {
+     top: 40%;
+}
+
+#h6 {
+     top: 40%;
+}
+
+#h7 {
+     top: 35%;
+}
+
+#h8 {
+     top: 40%;
+}
+
+#h9 {
+     top: 38%;
+}
+
+#h10 {
+     top: 35%;
+}
+
+#h11 {
+     top: 32%;
+}
+
+#h12 {
+     top: 32%;
+}
+
+#h13 {
+     top: 40%;
+}
+
+#h14 {
+     top: 42%;
+}
+
+#h15 {
+     top: 38%;
+}
+
+#h16 {
+    top: 38%;
 }
 
 #text {
@@ -115,20 +233,46 @@ h1 {
     padding: 3%;
 }
 
-
+#project {
+    background-color: #efe7e8;
+}
 
 p {
-    background-color: white;
     padding: 2%;
     font-size: 90%;
-    line-height: 130%;
+    line-height: 170%;
+}
 
+p.first {
+    background-color: white;
+    color: black;
+}
+
+p.second {
+    background-color: white;
 }
 
 p.dot2 {
     background: none;
     text-align: center;
     color: black;
+}
+
+p.description {
+
+    color: black;
+    padding: 3%;
+    padding-top: 5%;
+    margin: 1%;
+}
+
+p#description1, p#description2, p#description3, p#description4, p#description5, p#description6, p#description7, p#description8, p#description9, p#description10, p#description11, p#description12, p#description13, p#description14, p#description15, p#description16 {
+    color: black;
+    padding: 3%;
+    padding-top: 5%;
+    padding-bottom: 15%;
+    margin: 1%;
+    display: none;
 }
 
 footer {
@@ -139,7 +283,6 @@ footer {
     padding-top: 10%;
     opacity: 0.8;
     position: relative;
-
 
 }
 
@@ -181,13 +324,6 @@ a:hover {
 
 }
 
-p.description {
-
-    color: black;
-    padding: 4%;
-
-}
-
 .cross1 {
     position: absolute;
     width: 3%;
@@ -207,7 +343,7 @@ p.description {
     top: 0%;
     right: 0%;
     width: 100%;
-    height: 125%;
+    height: 165%;
     opacity: 0.8;
     z-index: 1;
 }
@@ -293,20 +429,33 @@ a.b:hover {
     display: none;
 }
 
+
 div.white {
-    background-color: white;
+
     z-index: 1;
     width: 60%;
     position: relative;
     left: 20%;
+}
 
-
+div.one {
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
 
 @media all and (min-width: 525px) {
     img.space {
         height: 45%;
+    }
+
+    img.space1 {
+        height: 13%
+    }
+
+    img.space2 {
+        height: 25%;
     }
 
     img.me {
@@ -316,9 +465,9 @@ div.white {
 
     img.logo {
         display: block;
-        width: 6%;
+        width: 5%;
         height: auto;
-        padding: 5%;
+        padding: 4%;
     }
 
     img.mail {
@@ -344,9 +493,19 @@ div.white {
         max-width: 60px;
     }
 
+
+
     h1 {
         font-size: 500%;
         padding-top: 5%;
+
+    }
+
+    h1.about {
+        left: 38%;
+        font-size: 220%;
+        top: 5%;
+
     }
 
     #text {
@@ -355,6 +514,7 @@ div.white {
 
     p {
         font-size: 100%;
+        background-color: white;
     }
 
     p.dot2 {
@@ -386,7 +546,6 @@ div.white {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: "mail-area phone-area linkedin-area"
 
-
     }
 
     img.me {
@@ -394,8 +553,9 @@ div.white {
     }
 
     p.description {
-
-        font-size: 84%;
+        padding-bottom: 0%;
+        font-size: 78%;
+        padding-top: 0%;
 
     }
 
@@ -410,6 +570,8 @@ div.white {
         padding-right: 7%;
 
     }
+
+
 
     .call {
         left: 25%;
@@ -428,17 +590,42 @@ div.white {
     div.white {
         left: 0%;
         width: 80%;
+        background-color: white;
     }
+
+    .black {
+        height: 130%;
+    }
+
 }
 
 @media all and (min-width: 700px) {
-     p.description {
+    p.description {
 
         font-size: 110%;
-
     }
 
+    section#profile {
 
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+            "me-area description-area"
+    }
+
+    div.white {
+        width: 90%;
+    }
+
+    h1.about {
+        top: 7%;
+        left: 40%;
+        font-size: 250%;
+    }
+
+    img.space2 {
+        height: 35%;
+    }
 }
 
 @media all and (min-width: 1050px) {
@@ -447,8 +634,25 @@ div.white {
         height: 55%;
     }
 
+    img.space1 {
+        height: 20%;
+    }
+
+    img.space2 {
+        height: 45%;
+    }
+
     img.logo {
         width: 4%;
+    }
+
+    img.one {
+        opacity: 0.3;
+    }
+
+    img.one:hover {
+        opacity: 1;
+        transition: 1s;
     }
 
 
@@ -489,11 +693,16 @@ div.white {
         grid-area: portfolio-area;
     }
 
-
-
     h1 {
-        font-size: 550%;
+        font-size: 700%;
         padding: 0%;
+
+    }
+
+    h1.about {
+        top: 15%;
+        left: 40%;
+        font-size: 280%;
     }
 
     #icon {
@@ -509,6 +718,11 @@ div.white {
         line-height: 0%;
 
     }
+
+    .black {
+        height: 160%;
+    }
+
     p.description {
         font-size: 130%;
     }
